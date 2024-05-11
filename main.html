@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Oksana Bogdanets</title>
+</head>
+
+<body>
+    <div class="texts"> <strong>Важливо!</strong>
+        <span>Після оплати надішліть у телеграм скріншот оплати</span>
+    </div>
+
+
+    <div class="max-page-container-lg page-container">
+        <form action="send.php" method="POST" class="footer__form form" novalidate="novalidate">
+            <div class="footer__input-group">
+                <label class="label">Ім'я<sup class="required"></sup></label>
+                <input type="text" class="input footer__input" placeholder="Ваше ім'я*" name="name" required=""
+                    minlength="2">
+            </div>
+            <div class="footer__input-group">
+                <label class="label">Email<sup class="required"></sup></label>
+                <input id="email" type="email" class="input footer__input mask-phone" placeholder="Email*" required=""
+                    name="email">
+            </div>
+            <div class="footer__input-group">
+                <label class="label">Телефон<sup class="required"></sup></label>
+                <input id="phone_1" type="tel" class="input footer__input mask-phone" placeholder="Телефон*" required=""
+                    name="phone">
+            </div>
+
+
+            <div class="footer__input-group">
+                <label class="label">Про що Ваш блог?<sup class="required"></sup></label>
+                <textarea class="footer__message footer__input" placeholder="Про що Ваш блог?"
+                    name="message"></textarea>
+            </div>
+
+
+
+            <div class="footer__infoButton">
+                <button class="button footer__button">Відправити</button>
+                <!-- <span class="footer__info">Всі поля є обов'язковими</span> -->
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
